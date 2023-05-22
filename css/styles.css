@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/*seleciona o elemento raiz do documento*/
+:root {
+    --text-color: #E7E4E4;
+    --details-color: #919191;
+    --color-elements: #FB8200;
+    --bg-gray: #2D2B2B;
+}
+
+* {
+    /* para que a borda dos elementos não ocupe área */
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2,
+h3, h4,
+h5, h6 {
+    margin: 0;
+}
+
+html,
+body {
+    /* background-color: #2D2B2B; */
+    background-color: var(--bg-gray);
+}
+
+header {
+    background-color: var(--bg-gray);
+    color: var(--color-elements);
+    height: 90px;
+    display: flex;
+    align-items: center;
+    border-bottom: outset 3px var(--color-elements);
+}
+
+nav {
+    /*alinhar os "filhos" um elemento*/
+    display: flex;
+    align-items: center;
+    /*space-between -> um item no começo e o outro no fim*/
+    justify-content: space-between;
+}
+
+nav h1 {
+    /*tamanho da fonte*/
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.itflix-mascot-container {
+    margin: 10px 0 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.itflix-mascot-container img {
+    margin-right: 10px;
+    width: 60px;
+}
+
+#itflix-card-list {
+    padding: 0 10px;
+}
+
+#itflix-card-list h2 {
+    margin: 20px 0 20px 0;
+    font-size: 24px;
+    font-weight: 550;
+    color: var(--text-color);
+}
+
+.itflix-card {
+    margin: 10px;
+    width: 110%;
+}
+
+.itflix-stars {
+    display: flex;
+    align-items: center;
+}
+
+.itflix-stars h5 {
+    color: var(--color-elements) !important;
+}
+
+.itflix-heart {
+    display: flex;
+    align-items: center;
+}
+
+.itflix-heart img {
+    margin: 10px;
+}
+
+.itflix-card img {
+    width: 85%;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.itflix-card-description {
+    width: 85%;
+    position: relative;
+    background-color: var(--bg-gray);
+    /*topo, direita, em baixo, ezquerda*/
+    padding: 10px 10px 5px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    min-height: 100px;
+}
+
+.itflix-avalia-datails {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content:start;
+}
+
+.itflix-details-heart {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.itflix-details-heart h5{
+    font-size: 14px;
+    color: var(--color-elements);
+}
+
+.itflix-details-heart img{
+    width: 17px;
+    margin-right: 5px;
+}
+
+.itflix-card-description p {
+    font-size: 16px;
+    font-weight: 550;
+    color: var(--text-color);
+    position: absolute;
+    top: 0;
+    margin-top: 10px;
+}
+
+.itflix-card-description h5 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--details-color);
+    margin: 0;
+}
+
+.itflix-details-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.itflix-details-card h3 {
+    text-align: left;
+    margin: 10px 0 10px 0;
+    color: var(--text-color);
+}
+
+.itflix-card-description img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.itflix-details-description {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0 20px 0;
+}
+
+.details-card-img img {
+    width: 300px;
+    border-radius: 8px 8px 8px 8px;
+    margin-right: 75px;
+}
+
+.itflix-details-description h4 {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.itflix-details-stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.itflix-details-stars img {
+    width: 17px;
+    margin-right: 5px;
+}
+
+.itflix-details-stars h5{
+    font-size: 14px;
+    color: var(--details-color);
+    margin-right: 5px;
+}
+
+
+.itflix-card-details p {
+    font-size: 14px;
+    color: var(--details-color);
+}
